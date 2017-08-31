@@ -17,12 +17,13 @@ class FormCard extends Component {
   }
 
   renderField() {
+    console.log(this.props);
     return (
       <div className="row">
         <div className="input-field col s12">
           <Field
             type="text"
-            name={this.state.type}
+            name={`${this.state.type}${this.props.count}`}
             placeholder={this.state.type}
             component={CardField}
           />

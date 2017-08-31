@@ -21,7 +21,7 @@ class CardList extends Component {
       i++;
       return (
         <li key={i}>
-          <FormCard handleSubmit={this.props.handleSubmit} />
+          <FormCard count={i} handleSubmit={this.props.handleSubmit} />
         </li>
       );
     });

@@ -1,17 +1,12 @@
 import React from 'react';
 
-export default ({ placeholder, name, type }) => {
+export default ({ input, name }) => {
   return (
     <div>
       <label htmlFor="">
         {name}
       </label>
-      <input
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        style={{ marginBottom: '5px' }}
-      />
+      <input {...input} style={{ marginBottom: '5px' }} />
     </div>
   );
 };

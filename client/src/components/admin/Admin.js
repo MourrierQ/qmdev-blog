@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions/index';
 
 import CardList from './form/CardList';
+import PostDraft from './PostDraft';
 
 class Admin extends Component {
   handleSubmit(e) {
     e.preventDefault();
-    console.log('hello submit');
   }
 
   renderContent() {
@@ -22,12 +22,7 @@ class Admin extends Component {
                 </div>
               </div>
               <div className="col s12 m6">
-                <div className="card orange darken-1">
-                  <div className="card-content white-text">
-                    <span className="card-title">test</span>
-                    <p>I'm a useless test</p>
-                  </div>
-                </div>
+                <PostDraft />
               </div>
             </div>
           </div>
